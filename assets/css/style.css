@@ -1,81 +1,66 @@
-container {
-    background: color #28a745;
-    text-align: center;
+/* Tema claro personalizado */
+body {
+  background-color: #f8f9fa;
+  color: #333;
+}
+/* Navbar claro */
+.navbar {
+  background-color: #ffffff !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.navbar-brand img {
+  filter: none; /* asumiendo que el logo negro funciona mejor en tema claro */
+}
+.nav-link {
+  color: #555 !important;
+  font-weight: 600;
+}
+.nav-link.active {
+  color: #0d6efd !important; /* azul bootstrap */
+}
+.nav-link:hover {
+  color: #0d6efd !important;
 }
 
-
-header {
-
-    width: 100%;
-    /* o un valor fijo como 900px */
-    margin: 0 auto;
-    /* centra horizontalmente */
+/* Carousel con bordes redondeados */
+.carousel-inner img {
+  border-radius: 8px;
 }
 
-
-header .navbar {
-    padding-top: 0.3rem;
-    padding-bottom: 0.3rem;
-    margin-bottom: 2rem;
-
+/* Títulos */
+h2.title {
+  color: #0d6efd;
+  font-weight: 700;
+  margin-bottom: 1rem;
 }
 
-header .navbar-brand img {
-    height: 30px;
+/* Botones */
+.boton.secundario.small {
+  background-color: #0d6efd;
+  color: white !important;
+  border-radius: 4px;
+  padding: 6px 12px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+.boton.secundario.small:hover {
+  background-color: #084298;
+  color: white !important;
+  text-decoration: none;
 }
 
-
-
-
-
-main {
-    width: 80%;
-    margin: 0 auto;
-    /* Centra el contenido */
-    margin-bottom: 50px;
+/* Listas */
+ul {
+  padding-left: 1.2rem;
+  color: #444;
 }
 
-
-footer {
-    background-color: #28a745; 
-    color: white; 
-    padding: 30px 0; 
-    text-align: center; 
-    font-family: Arial, sans-serif; 
+/* Footer */
+.text-center.mt-4 h5 {
+  color: #0d6efd;
 }
-
-.footer-container h4 {
-    margin-bottom: 15px;
-    font-weight: bold;
-}
-
-.footer-container form {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    gap: 15px; 
-    margin-bottom: 20px;
-}
-
-.footer-container input {
-    width: 900px;
-    padding: 15px; 
-    font-size: 16px; 
-}
-
-.footer-container button {
-    background-color: white; 
-    color: #000000; 
-    padding: 10px 20px; 
-    font-weight: bold; 
-    cursor: pointer; 
-}
-
-.footer-container button:hover {
-    background-color: #f8f9fa; 
-}
-
-.footer-container p {
-    font-size: 15px; 
-    color: #efeeee; 
+.text-center.mt-4 p {
+  color: #666;
 }
